@@ -1,0 +1,126 @@
+{%extends "tallerdb/baseini.html"%}
+{%block content%}
+{% load static %}
+<html lang="en">
+<head>
+    <title>Equipo</title>
+	<link rel="stylesheet" type="text/css" href='{%static "Style/styleart.css" %}'>
+	<link rel="stylesheet" type="text/css" href='{%static "Style/style.css"  %}'>
+	<link rel="stylesheet" type="text/css" href='{%static "Style/volver.css"  %}'>
+	<div id="background">
+		<div id="circle">
+		  <div id="circle-glow"></div>
+		  <div id="circle-inner"></div>
+		</div>
+	  </div>
+	  <div id="app">
+		<div id="nav">
+		  <div id="nav-items">
+			<div class="nav-item">
+			  <i class="fa-solid fa-house"></i>
+			</div>
+			<div class="nav-item">
+			  <i class="fa-solid fa-comment"></i>
+			</div>
+			<div class="nav-item">
+			  <i class="fa-solid fa-bolt"></i>
+			</div>
+			<div class="nav-item">
+			  <i class="fa-solid fa-user"></i>
+			</div>
+			<div class="nav-item">
+			  <i class="fa-solid fa-image"></i>
+			</div>
+			<div class="nav-item">
+			  <i class="fa-solid fa-chart-simple"></i>
+			</div>
+			<div class="nav-item">
+			  <i class="fa-solid fa-dice"></i>
+			</div>
+		  </div>
+		</div>
+		
+		<div id="profiles">
+		  <div class="profile">
+			<div class="profile-content">
+				<h2 style="color: white;">Cambiador de aceite</h2>
+			  <div class="profile-pic">
+				<img class="profile-pic-image" src='{% static "imagen/Trabajadores/trab 1.png"  %}'/>
+			  </div>
+			  <h3 class="profile-name">Fernando</h3>
+			</div>
+		  </div>
+		  <div class="profile">
+			<div class="profile-content">
+				<h2 style="color: white;">Mantencion</h2>
+			  <div class="profile-pic">
+				<img class="profile-pic-image" src='{% static "imagen/Trabajadores/trab 2.png"  %}' />
+			  </div>
+			  <h3 class="profile-name">Nicolas</h3>
+			</div>
+		  </div>
+		  <div class="profile">
+			<div class="profile-content">
+				<h2 style="color: white;">Mantencion</h2>
+			  <div class="profile-pic">
+				<img class="profile-pic-image" src='{% static "imagen/Trabajadores/trab 3.png"  %}' />
+			  </div>
+			  <h3 class="profile-name">Fernanda</h3>
+			</div>
+		  </div>
+		  <div class="profile">
+			<div class="profile-content">
+				<h2 style="color: white;">Pintura</h2>
+			  <div class="profile-pic">
+				<img class="profile-pic-image" src='{% static "imagen/Trabajadores/trab 4.png"  %}' />
+			  </div>
+			  <h3 class="profile-name">Oscar</h3>
+			</div>
+		  </div>
+		  <div class="profile">
+			<div class="profile-content">
+				<h2 style="color: white;">Recepcionista</h2>
+			  <div class="profile-pic">
+				<img class="profile-pic-image" src='{% static "imagen/Trabajadores/trab 5.png"  %}' />
+			  </div>
+			  <h3 class="profile-name">Macarena</h3>
+			</div>
+		  </div>
+		  <div class="profile">
+			<div class="profile-content">
+				<h2 style="color: white;">Subgerente</h2>
+			  <div class="profile-pic">
+				<img class="profile-pic-image" src='{% static "imagen/Trabajadores/subgerente.png"  %}' />
+			  </div>
+			  <h3 class="profile-name">HENRY</h3>
+			</div>
+		  </div>
+		  <div class="profile">
+			<div class="profile-content">
+				<h2 style="color: white;">Gerente</h2>
+			  <div class="profile-pic">
+				<img class="profile-pic-image" src='{% static "imagen/Trabajadores/gerente.png" %}' />
+			  </div>
+			  <h3 class="profile-name">HENRY</h3>
+			</div>
+		  </div>
+		</div>
+		<a href="proyecto.html" class="boton-volver">Volver</a>
+	  </div>
+	</main> 
+	<footer class="text-bg-dark text-center pt-3 pb-3">
+		Belalv ©Copyright
+		<span class="mx-2 fs-3"><i class="bi bi-whatsapp"></i></span>
+		<span class="mx-2 fs-3"><i class="bi bi-facebook"></i></span>
+		<span class="mx-2 fs-3"><i class="bi bi-instagram"></i></span>
+		<a class="link" href="https://es-la.facebook.com"><img src='{% static "imagen/logos/face.png" %}' width="50" height="50"></a>
+		<a class="link" href="https://www.instagram.com/tallerrayomakween/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"><img src='{% static "imagen/logos/insta.png" %}' width="50" height="50"></a>
+		<a class="link" href="https://twitter.com/?lang=es"><img src='{% static "imagen/logos/twitter.png" %}' width="50" height="50"></a>
+		<a class="link" href="https://chat.whatsapp.com/LxEWPMyYEme5xClQJrjFi2"><img src='{% static "imagen/logos/wtspp.png" %}' width="50" height="50"></a>
+		<a class="link" href="https://www.youtube.com/watch?v=7Tu7Xp1kp98"><img src='{% static "imagen/logos/youtube.png" %}' width="50" height="50"></a>
+		<a class="link" href="https://www.youtube.com/watch?v=t4MKxFuyD7Q"></a>
+		<a class="btn btn-primary" href="contacto.html"><span class="mx-2 fs-3">CONTACTO</i></span></a>
+	  </footer>
+</body>
+</html>
+{% endblock%}

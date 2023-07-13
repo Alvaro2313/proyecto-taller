@@ -1,0 +1,47 @@
+{% extends "tallerdb/baseini.html" %}
+{%block content%}
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<body>
+    <div class="container">
+        <h2> Tienda </h2><br>
+        <div class ="row">
+            <div class ="col-8">
+                <div class="row" style="padding: 5px 0;">
+                    <div class="col-12">
+                        <div class="row">
+                            {% for producto in productos %}
+                            <div class="col-6">
+                                <div class="card text-center">
+                                    {%if producto.imagen%}
+                                        <img src="{{ producto.imagen.url }}" class="card-img-top">
+                                    {%else%}
+                                        <img src="{% static 'imagenes/llanta.png'%}" class="card-img-top">
+                                    {%endif%}
+                                    <div class="card-body">
+                                        <h5 class="card-title" style="font-wight:bold;"> id_producto : {{producto.id_producto }}</h5>
+                                        <p class="card-text">
+                                            Nombre : {{producto.nombre}}<br>
+                                            Precio:$ {{producto.precio}}<br>
+                                            stock: {{producto.stock}}<br>
+                                        </p>
+                                        <a href="{% url 'agregar' producto.id_producto %}" class="btn btn-outline-success">agregar al carro</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {%endfor%}
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+            <div class="col-4">
+                {%include "tallerdb/carrito.html"%}
+            </div>
+        </div>
+    
+</div>
+</body>
+</html>
+{% endblock %}
